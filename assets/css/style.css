@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #181818;
+}
+
+main{
+    background-color: #181818;
+    width: 100%;
+    
+    position: absolute;
+}
+#boxTaskList{
+    background-color: #2a2a2a;
+   
+    padding: 3rem;
+    gap: 1rem;
+    width: 90%;
+    margin-left: 5%;
+   align-items: center;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+input{
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #3e3e3e;
+    border: none;
+    width: 70%;
+    margin-left: 10%;
+    font-size: 20px;
+    color: #f0f0f0;
+}
+#add{
+    width: 5%;
+    border-radius: 8px;
+    background-color: #3e3e3e;
+    border: none;
+   
+   height: 8vh;
+}
+#add:hover{
+    cursor: pointer;
+}
+.list1{
+    color: #f0f0f0;
+}
+.results{
+    background-color: #3e3e3e;
+    width: 80%;
+    margin-left: 10%;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#p1{
+    color: red;
+margin-left: 35%;
+}
+.clean{
+    background-color: #2a2a2a;
+    padding: 1%;
+    width: 4%;
+    border-radius: 30px;
+    border: none;
+}
+.clean:hover{
+    cursor: pointer;
+}
+.green{
+    background-color: #2a2a2a;
+    padding: 1%;
+    width: 4%;
+    border-radius: 30px;
+    margin-left: 85%;
+    border: none;
+}
+.taskDone {
+    font-weight: bold;
+    background-color: green;
+    border-radius: 9898989898px;
+}
