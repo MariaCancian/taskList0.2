@@ -38,14 +38,29 @@ input{
 #add{
     width: 5%;
     border-radius: 8px;
-    background-color: #3e3e3e;
+    background-color: transparent;
     border: none;
-   
    height: 8vh;
 }
 #add:hover{
     cursor: pointer;
+    background-color: pink;
 }
+
+#remove-btm{
+    width: 5%;
+    border-radius: 8px;
+    background-color: transparent;
+    border: none;
+   height: 8vh;
+}
+
+#remove-btm:hover{
+cursor: pointer;
+background-color: red;
+}
+
+
 .list1{
     color: #f0f0f0;
 }
