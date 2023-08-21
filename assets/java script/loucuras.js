@@ -123,3 +123,42 @@ function editTask(id){
 function clenField(){
     document.getElementById("InputAdd").value = "";
 }
+
+
+
+function createPeople(){
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let date = document.getElementById("date").value;
+    let cell = document.getElementById("cell").value;
+    let cpf = document.getElementById("cpf").value;
+   let data = new Date(date);
+
+    if (data.setHours(20) > new Date()) {
+        let msg = document.getElementById('teste');
+        msg.innerHTML = 'Preencha com a data menor q a atual';
+        return;
+      }else{
+    
+     if(name == '' || email == '' || date == '' || cell == '' || cpf == ''){
+      
+    test = `<p id="test"> Todos os campos devem ser preenchidos</p>`
+        document.getElementById("teste").innerHTML = test; 
+        setTimeout(()=>{
+         
+          }, 3000)
+
+    } else{
+    const list = new List(name, email, date, cell, cpf);
+   
+   showHtml();
+     pessoas.addPeople(list);
+
+    cleanInput();
+   
+     console.log(pessoas);
+     test = `<p id="cadrastro"> cadastro concluído</p>`;  
+       document.getElementById("teste").innerHTML = test;
+   
+      ;}}
+}
