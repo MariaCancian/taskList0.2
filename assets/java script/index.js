@@ -47,7 +47,6 @@ function changePage() {
     const city = document.getElementById("city").value;
     const telephone = document.getElementById("telephone").value;
     const cpf = document.getElementById("cpf").value;
-    
   
     let isAlreadyRegistered = false;
   
