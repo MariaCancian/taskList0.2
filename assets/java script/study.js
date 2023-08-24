@@ -34,7 +34,50 @@ class UserList{
     // utilizamos o this para refeerenciar ao this logo acima, em seguida colocamos o users que é nosso array vazio
     //pos iremeos puxar desse array nossos valores e com ele adicinar novos users, por isso o método push
     // e o user do parametro foi só utilizado para fazer a referencia do parametro do addUser.
-
 }
+
+
 // agora para fazer com que isso tenha uma funcionalidade temos que criar uma instancia, para como o próprio nome já diz
-//para instanciar a class
+//para instanciar a class.
+
+const userList = new UserList();
+
+
+
+// agora passaremos o método de adicionar 
+
+function createUser(){
+    const name = document.getElementById("name").value;
+    const salario = document.getElementById("wage").value;
+    const despezas = document.getElementById("expenses").value;
+    const receita = document.getElementById("receipt").value;
+
+
+
+    const newcreateUser = new User(name, salario, despezas, receita );
+    userList.addUser(newcreateUser);
+    console.log(userList);
+
+ showOnHtml();
+ cleanFields();
+}
+
+function showOnHtml(){
+    let html = "";
+    userList.users.forEach((user)=> {
+        html+= `<div>
+        <p><strong>nome:</strong>${user.name}</p>
+        <p><strong>salario:</strong>${user.wage}</p>
+        <p><strong>despezas:</strong>${user.expenses}</p>
+        <p><strong>receita:</strong>${user.receipt}</p></div>`
+    })
+
+    document.getElementById("user-list").innerHTML=html;
+}
+
+function cleanFields(){
+    document.getElementById("name").value= "";
+    document.getElementById("wage").value= "";
+    document.getElementById("expenses").value= "";
+    document.getElementById("receipt").value= "";
+}
