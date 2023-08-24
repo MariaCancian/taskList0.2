@@ -51,10 +51,11 @@ function createUser(){
     const salario = document.getElementById("wage").value;
     const despezas = document.getElementById("expenses").value;
     const receita = document.getElementById("receipt").value;
-
+//adicionamos a function para criação de novos users
 
 
     const newcreateUser = new User(name, salario, despezas, receita );
+    //estanciamos para que nossa function seja funcional
     userList.addUser(newcreateUser);
     console.log(userList);
 

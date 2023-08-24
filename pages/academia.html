@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../assets/java script/academia.js"></script>
+    <link rel="stylesheet" href="../assets/css/acdemia.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main-div">
+        <div id="user-form">
+            <h1>Escreva-se</h1>
+
+            <label for="name">Nome</label>
+            <input type="text" id="name" required>
+
+            <label for="Cpf">Cpf</label>
+            <input type="text" id="cpf" required>
+
+            <label for="age">idade</label>
+            <input type="number" id="age" required>
+
+            <label for="email">email</label>
+            <input type="email" id="email" required>
+
+            <label for="gender">genero</label>
+            <input type="text" id="gender" required>
+
+            <label for="phone">telephone</label>
+            <input type="number" id="phone" required>
+
+            <label for="adress">endereço</label>
+            <input type="text" id="adress" required>
+        </div>
+
+        <div id="div-button">
+            <button id="btn-register" onclick="createUser()" type="button">crie sua conta</button>
+            <button id="btn-register" onclick="showUser()" type="button"> ver lista de espera</button>
+
+        </div>
+    </div>
+
+    <div></div>
+
+    <div id="sub-div" class="hidden">
+        <div id="button-back">
+            <button id="btn-register" onclick="showREgister()" type="button"> voltar</button>
+            <button id="btn-register" onclick="rEgisterman()" type="button"> homens</button>
+            <button id="btn-register" onclick="registerhoman()" type="button"> mulheres</button>
+            <div id="result-div">
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="main-div2">
+        <button onclick="backBackPage()">Voltar</button>
+        <div id="result-man-div">
+            // voltar da pag dos homens
+        </div>
+    </div>
+    <div id="main-div3">
+        <button onclick="backBackPage2()">Voltar</button>
+        <div id="result-woman-div">
+            // voltar da pag dos mulheres
+        </div>
+
+    </div>
+
+    <div id="main-sub-div">
+        <div id="user-list">
+            <p id="user-list"></p>
+        </div>
+
+</body>
+
+</html>
