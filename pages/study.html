@@ -1,0 +1,82 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/study.css">
+
+    <script src="../assets/java script/study.js"></script>
+    <title>Cadastro de Usuário</title>
+</head>
+
+<body>
+    <h1 id="title-page">Acontecendo agora</h1>
+
+    <div id="main-div">
+
+        <div id="user-form">
+            <h2>Inscreva-se hoje</h2>
+            <label for="name">Nome</label>
+            <input type="text" id="name" placeholder="João Silva" required>
+
+            <label for="wage">Seu salario atual</label>
+            <input type="number" id="wage" placeholder="" required>
+
+            <label for="expenses">Despezas</label>
+            <input type="number" id="expenses" required>
+
+            <label for="receipt">Receita</label>
+            <input type="number" id="receipt"  required>
+
+            <div id="div-button">
+                <button id="button-register" onclick="createUser()" type="button">Entrar na lista de espera</button>
+                <button id="button-register" onclick="showUsers()" type="button">Ver lista de espera</button>
+            </div>
+
+        </div>
+        <div id="result-div">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="logo">
+                <g>
+                    <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                    </path>
+                </g>
+            </svg>
+
+        </div>
+    </div>
+
+    <div id="sub-div" class="hidden">
+        <div id="button-back">
+            <button id="button-register" onclick="showRegister()" type="button">Voltar</button>
+            
+        </div>
+        <div id="div-count">
+            <p id="contador">Contador</p>
+        </div>
+        <div id="main-sub-div">
+            <div id="user-list">
+                <p id="user-list"></p>
+            </div>
+            <div id="result-div2">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="logo">
+                    <g>
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </g>
+                </svg>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
