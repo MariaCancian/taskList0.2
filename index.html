@@ -1,52 +1,72 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrar</title>
-    <script src="assets/java script/index.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/financialrecord.css">
+    <script src="./assets/js/financialrecord.js"></script>
+    <title>Financeiral Record</title>
 </head>
 <body>
-    <main id="log-inPage">
-        <div id="inputBoxArea">
-             <div class="inputs">
-                <label for="">Nome Completo</label>
-                <input id="name" type="text"required>
-            </div>
-            <div class="inputs">
-                <label for="">Email</label>
-                <input id="email" type="email" required >
-            </div> 
-            <div class="inputs">
-                <label for="">Data de nascimento</label>
-                <input id="age" type="date"required>
-            </div>
-            <div class="inputs">
-                <label for="">Cidade</label>
-                <input id="city" type="text"required>
-            </div>
-            <div class="inputs">
-                <label for="">Telefone</label>
-                <input id="telephone" type="number"required>
-            </div>
-            <div class="inputs">
-                <label for="">Cpf</label>
-                <input id="cpf" type="number" required  >
-            </div>
+    <main id="main01">
+        <h1>Cadestre-se na academia!</h1>
+        <div id="inputs-box">
+            <div id="inputs">
+            <label for="">Digite seu nome completo</label>
+            <input id="name" type="text" placeholder="ex: Lívia Belão"> 
         </div>
-        <div id="buttons">
-            <button id="join" onclick=" addNewPerson() " >Cadastrar</button>
-            <button id="join" onclick="changePage()" >Lista de espera</button>
+            <div id="inputs">
+            <label for="">Digite seu CPF</label>
+            <input id="cpf" type="text" placeholder="ex:98536710004">
         </div>
-        <p id="invalid"></p>
-        <p id="formsConcluid"></p>
+            <div id="inputs">
+            <label for="">Digite seu telefone</label>
+            <input id="cellphone" type="text"  placeholder="ex:19991263459">
+        </div>
+            <div id="inputs">
+            <label for="">Digite seu endereço</label>
+            <input id="address" type="text">
+        </div>
+            <div id="inputs">
+                <label for="">Digite seu genêro com "F", "M" ou "all" </label>
+            <input id="gender" type="text">
+        </div>
+        </div>
+        <div id="msg-error">
+            <p id="error" class="hidden"></p>
+        </div>
+        <div id="msg-success" >
+            <p id="success" class="hidden"></p>
+        </div>
+        <div id="butons">
+            <button onclick="createUsers()">Crie sua conta</button>
+            <button onclick="registrationPage()">veja cadastros</button>
+        </div>
+
 
     </main>
-    <main id="listPersonMain">
-        <button onclick="comeBack()" >Voltar</button>
-        <p id="newPersonInfos"></p>
-        <p id="totalClients">0</p>
+    <main id="main02">
+        <div id="butons">
+            <button onclick="backRegistrationPage()">Voltar</button>
+            <button onclick="manPage()">Homens</button>
+            <button onclick="womanPage()">Mulheres</button>
+          <div id="result-div">
+
+          </div>
+        </div>
+    </main>
+    <main id="main03">
+        <button onclick="backBackPage()">Voltar</button>
+        <div id="result-man-div">
+
+        </div>
+    </main>
+    <main id="main04">
+        <button onclick="backBackPage2()">Voltar</button>
+        <div id="result-woman-div">
+
+        </div>
     </main>
 </body>
-</html>
+</html
