@@ -1,32 +1,31 @@
-//amigos e amigas agora iremos dar inicio a nossa tela hibrida
- function showUser(){
-    document.getElementById("main-div").classList.add("hidden");
-    document.getElementById("sub-div").classList.remove("hidden");
- }
+console.log("to funfando")
 
- function showRegister(){
-    document.getElementById("main-div").classList.remove("hidden");
-    document.getElementById("sub-div").classList.add("hidden");
- }
 
- function registerMan(){
-    document.getElementById("main-div2").classList.add("hidden");
-    document.getElementById("main-div3").classList.remove("hidden");
- }
+//primeiro irei criar uma função para verificar se os inputs estao funcionando
 
- function backBackPage(){
-    document.getElementById("main-div3").classList.add("hidden");
-    document.getElementById("main-div2").classList.remove("hidden");
-    console.log("passou pela função showRegister")
- }
-
- function registerHoman(){
-   document.getElementById("main-div3").classList.add("hidden");
-   document.getElementById("main-div2").classList.remove("hidden");
-   console.log("passou pela função showRegister")
+function verificarInputs(){
+   let titulo = document.getElementById("input-name").value; 
+   //o ponto value é para pegar o valor 
 }
 
- 
 
 
+class User{
+   constructor(name, date, question, cpf, phone,id ){
+      this.name = name;
+      this.date = date;
+      this.question = question;
+      this.cpf = cpf;
+      this.phone = phone;
+      this.id = id;
 
+   }
+}
+
+class listUser{
+   constructor()
+   {
+      this.listUserArray = [];
+   }
+
+}
