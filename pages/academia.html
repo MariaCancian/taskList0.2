@@ -1,46 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../assets/java script/academia.js"></script>
-    <link rel="stylesheet" href="../assets/css/acdemia.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/acdemia.css">
+    <script src="/assets/java script/academia.js"></script>
+    <title>Cadastro de academia</title>
 </head>
-
 <body>
-   <div id="main-container">
-    <h2 id="main-title">
-        entre na academia
-    </h2>
+    <main id="main01">
+        <h1>Cadastre-se na academia!</h1>
+        <div id="inputs-box">
+            <div id="inputs">
+            <label for="">Digite seu nome completo</label>
+            <input id="name" type="text" placeholder="ex: Lívia Belão"> 
+        </div>
+            <div id="inputs">
+            <label for="">Digite seu CPF</label>
+            <input id="cpf" type="text" placeholder="ex:98536710004">
+        </div>
+            <div id="inputs">
+            <label for="">Digite sua data de aniversário</label>
+            <input id="birthdate" type="date" placeholder="ex:12/10/2004">
+        </div>
+            <div id="inputs">
+            <label for="">Digite seu telefone</label>
+            <input id="cellphone" type="text"  placeholder="ex:19991263459">
+        </div>
+            <div id="inputs">
+            <label for="">Digite seu endereço</label>
+            <input id="address" type="text">
+        </div>
+            <div id="inputs">
+                <label for="">Digite seu genêro com "F", "M" ou "all" </label>
+            <input id="gender" type="text">
+        </div>
+        </div>
+        <div id="msg-error">
+            <p id="error" class="hidden"></p>
+        </div>
+        <div id="msg-success" >
+            <p id="success" class="hidden"></p>
+        </div>
+        <div id="butons">
+            <button onclick="createUsers()">Crie sua conta</button>
+            <button onclick="registrationPage()">Veja cadastros</button>
+        </div>
 
-    <div id="container-inputs">
 
-        <label for="input-name">Name</label>
-        <input type="text" id="input-name" name="input-name" class="inputs" required>
+    </main>
+    <main id="main02">
+        <div id="butons2">
+            <button id="back" onclick="backRegistrationPage()">Voltar</button>
+            <button id="man" onclick="manPage()">Homens</button>
+            <button id="woman" onclick="womanPage()">Mulheres</button>
+        </div>
+          <div id="result-div">
 
-        <label for="input-date">Data de Nascimento</label>
-        <input type="date" id="input-date" name="input-date" class="inputs" required>
+          </div>
+        
+    </main>
+    <main id="main03">
+        <button onclick="backBackPage()">Voltar</button>
+        <div id="result-man-div">
 
-        <label for="input-question">Ja teve experiencia fazendo exercios, constantemente</label>
-        <input type="text" id="input-question" name="input-question" class="inputs" required>
+        </div>
+    </main>
+    <main id="main04">
+        <button onclick="backBackPage2()">Voltar</button>
+        <div id="result-woman-div">
 
-        <label for="input-cpf">Cpf</label>
-        <input type="number" id="input-cpf" name="input-cpf" class="inputs" required>
-
-        <label for="input-phone">Telefone</label>
-        <input type="number" id="input-phone" name="input-phone" class="inputs" required>
-
-        <div id="msg">Testando</div>
-        <!-- criamos esta div pois teremos uma mensagem, 
-        é necessario que ela esteja fazia para ser alterada no js -->
-
-        <button id="button-register" class="btn" onclick="createUser()">Enviar cadastro</button>
-    </div>
-   </div>
-
-   <div id="container-list"></div>
+        </div>
+    </main>
 </body>
-
 </html>

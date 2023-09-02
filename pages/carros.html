@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/java script/carros.js"></script>
+    <link rel="stylesheet" href="/assets/css/carros.css">
+    <title>Lista de carros</title>
+</head>
+<body>
+    <main>
+        <div id="inputs-box">
+            <h1>Cadastrar carros</h1>
+            <div>
+               <label>Nome do carro:</label>
+                <input id="name" type="text">
+                <p  id="name-error"></p>
+            </div>
+            <div>
+               <label>Preço do carro:</label>
+                <input id="preco" type="number">
+                <p  id="preco-error"></p>
+            </div>
+            <div>
+                <label>Marca:</label>
+                <input id="marca" type="text">
+                <p  id="marca-error"></p>
+            </div>
+            <div>
+                <label>Ano do carro:</label>
+                <input id="ano" type="text">
+                <p  id="ano-error"></p>
+            </div>
+            <div>
+                <label>Coloque o link do carro:</label>
+                <input id="imagem" type="text">
+                <p  id="imagem-error"></p>
+            </div>
+            <p id="msg"></p>
+            <div>
+                <button id="add" onclick="criarCarro()">Adicionar</button>
+            </div>
+        </div>
+        <div id="resultado">
+            
+        </div>
+    </main>
+</body>
+</html>
